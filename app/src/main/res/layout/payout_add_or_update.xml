@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/payout_btn_box_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/payout_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:background="#F0F8FF"
+                android:text="@string/button_save"
+                />
+
+            <Button
+                android:id="@+id/payout_cancel_btn"
+                android:layout_width="match_parent"
+                android:background="#F0F8FF"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cancel" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/payout_btn_box_tl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/payout_select_account_book_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/payout_account_book_icon" />
+
+                <Button
+                    android:id="@+id/payout_select_account_book_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFFAF0"
+                    android:text="@string/button_text_select_account_book" />
+
+                <EditText
+                    android:id="@+id/payout_select_account_book_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_select_account_book_btn"
+                    android:layout_toRightOf="@id/payout_select_account_book_iv"
+                    android:focusable="false"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/payout_enter_amount_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/payout_amount_icon" />
+
+                <Button
+                    android:id="@+id/payout_enter_amount_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFFAF0"
+                    android:text="@string/button_text_enter_amount" />
+
+                <EditText
+                    android:id="@+id/payout_enter_amount_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_enter_amount_btn"
+                    android:layout_toRightOf="@id/payout_enter_amount_iv"
+                    android:hint="@string/hint_enter_amount"
+                    android:maxLength="10"
+                    android:numeric="decimal"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/payout_select_category_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/payout_category_icon" />
+
+                <Button
+                    android:id="@+id/payout_select_category_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFAF0"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/button_text_select_category" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/payout_select_category_actv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_select_category_btn"
+                    android:layout_toRightOf="@id/payout_select_category_iv"
+                    android:completionThreshold="1"
+                    android:dropDownWidth="match_parent"
+                    android:hint="@string/hint_enter_category"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/payout_select_date_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFAF0"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/button_text_select_date" />
+                <EditText
+                    android:id="@+id/payout_select_date_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_select_date_btn"
+                    android:focusable="false"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/payout_select_type_btn"
+                    android:layout_width="wrap_content"
+                    android:background="#FFFAF0"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/button_text_select_type" />
+                <EditText
+                    android:id="@+id/payout_select_type_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_select_type_btn"
+                    android:focusable="false"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/payout_select_user_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFAF0"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/button_text_select_user" />
+                <EditText
+                    android:id="@+id/payout_select_user_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/payout_select_user_btn"
+                    android:hint="@string/hint_select_user"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:lines="8"
+                android:hint="@string/hint_enter_comment"
+                android:gravity="fill_horizontal"
+                android:maxLength="300"
+                android:textColor="@color/black"
+                android:id="@+id/payout_comment_et"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

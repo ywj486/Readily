@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="SlideMenuActivity">
+
+        <item>数据备份</item>
+        <item>数据还原</item>
+
+    </string-array>
+
+    <string-array name="InitDefaultUserName">
+
+        <item>小强</item>
+        <item>墨妍</item>
+        <item>佳佳</item>
+
+    </string-array>
+
+
+    <string-array name="SlideMenuUser">
+
+        <item>新建人员</item>
+
+    </string-array>
+    <string-array name="SlideMenuAccountBook">
+
+        <item>新建账本</item>
+
+    </string-array>
+    <string-array name="SQLiteDAOClassName">
+
+        <item>UserDao</item>
+        <item>AccountBookDao</item>
+        <item>CategoryDao</item>
+        <item>PayoutDao</item>
+        <item>CreateViewDao</item>
+
+    </string-array>
+    <string-array name="InitDefaultAccountBookName">
+        <item>默认账本</item>
+    </string-array>
+    <string-array name="InitDefaultCategoryName">
+        <item>买菜</item>
+        <item>购物</item>
+        <item>交通</item>
+        <item>饭费</item>
+        <item>通讯</item>
+        <item>煤电</item>
+        <item>房租</item>
+        <item>借贷</item>
+        <item>其他</item>
+
+
+    </string-array>
+    <string-array name="SlideMenuCategory">
+        <item>新建类别</item>
+        <item>统计类别</item>
+    </string-array>
+    <string-array name="SlideMenuPayout">
+        <item>切换账本</item>
+    </string-array>
+    <string-array name="payoutType">
+        <item>均分</item>
+        <item>借贷</item>
+        <item>个人</item>
+    </string-array>
+    <string-array name="SlideMenuStatistics">
+        <item>切换账本</item>
+        <item>导出表格</item>
+    </string-array>
+</resources>
